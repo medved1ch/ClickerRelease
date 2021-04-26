@@ -1,0 +1,58 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="CanResizeWithGrip" WindowStyle="None">
+    <Grid>
+        <TabControl HorizontalAlignment="Left" Height="442" VerticalAlignment="Top" Width="792">
+            <TabItem Header="Clicker">
+                <Grid Background="#FFE5E5E5" Margin="0,1,-4,-6">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="103*"/>
+                        <ColumnDefinition Width="292*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="pnt" Content="0" HorizontalAlignment="Left" Margin="239,57,0,0" VerticalAlignment="Top" Height="35" Width="234" Grid.Column="1"/>
+                    <Label x:Name="Points_per_Click" Content="Label" HorizontalAlignment="Left" Margin="239,97,0,0" VerticalAlignment="Top" Height="35" Width="212" Grid.Column="1"/>
+                    <Image HorizontalAlignment="Left" Height="227" Margin="40,161,0,0" VerticalAlignment="Top" Width="484" Source="img/Bra2gjK38LY.jpg" MouseDown="Image_MouseDown" Stretch="Fill" Grid.Column="1"/>
+                    <Image HorizontalAlignment="Left" Height="227" Margin="20,161,0,0" VerticalAlignment="Top" Width="186" Source="img/N8Sg213A7ow.jpg" Stretch="Fill" MouseDown="Image_MouseDown_1"/>
+                    <Button Content="Выход" HorizontalAlignment="Left" Height="35" Margin="41,57,0,0" VerticalAlignment="Top" Width="114" Click="Button_Click_2"/>
+                    <Button Content="Ярик водила" Grid.Column="1" HorizontalAlignment="Left" Height="35" Margin="50,46,0,0" VerticalAlignment="Top" Width="103" Click="Button_Click_4"/>
+                    <Button Content="Держуришь" Grid.Column="1" HorizontalAlignment="Left" Height="35" Margin="421,46,0,0" VerticalAlignment="Top" Width="103" Click="Button_Click_5"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Shop" Margin="-2,-2,2,0">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="7*"/>
+                        <ColumnDefinition Width="6*"/>
+                        <ColumnDefinition Width="380*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="bt2" Content="&#xA;Коридор" HorizontalAlignment="Left" Height="40" Margin="544,57,0,0" VerticalAlignment="Top" Width="98" Grid.Column="2" Click="bt2_Click"/>
+                    <Button x:Name="bt1" Content="&#xA;Зеленка" HorizontalAlignment="Left" Height="40" Margin="26,61,0,0" VerticalAlignment="Top" Width="98" Grid.Column="2" Click="Button_Click"/>
+                    <Label x:Name="Lb1_bt1" Content="" Grid.Column="2" HorizontalAlignment="Left" Height="30" Margin="56,57,0,0" VerticalAlignment="Top" Width="82" RenderTransformOrigin="0.445,0.567"/>
+                    <Label x:Name="Lb2_bt2" Content="     " Grid.Column="2" HorizontalAlignment="Left" Height="25" Margin="574,57,0,0" VerticalAlignment="Top" Width="61" RenderTransformOrigin="0.445,0.567"/>
+                    <Label Content="Препараты" Grid.Column="2" HorizontalAlignment="Left" Height="29" Margin="26,10,0,0" VerticalAlignment="Top" Width="112"/>
+                    <Label Content="Палата" Grid.Column="2" HorizontalAlignment="Left" Height="29" Margin="544,10,0,0" VerticalAlignment="Top" Width="112"/>
+                    <Label Content="Больница" Grid.Column="2" HorizontalAlignment="Left" Height="29" Margin="294,10,0,0" VerticalAlignment="Top" Width="112"/>
+                    <Button x:Name="bt1_Copy1" Content="&#xA;ЙОД" HorizontalAlignment="Left" Height="40" Margin="26,211,0,0" VerticalAlignment="Top" Width="98" Grid.Column="2" Click="bt1_Copy1_Click"/>
+                    <Label x:Name="Lb1_bt1_Copy1" Content="" Grid.Column="2" HorizontalAlignment="Left" Height="30" Margin="56,207,0,0" VerticalAlignment="Top" Width="82" RenderTransformOrigin="0.445,0.567"/>
+                    <Button x:Name="bt1_Copy2" Content="&#xA;Больница №2" HorizontalAlignment="Left" Height="40" Margin="264,211,0,0" VerticalAlignment="Top" Width="98" Grid.Column="2" Click="bt1_Copy2_Click"/>
+                    <Label x:Name="Lb1_bt1_Copy2" Content="" Grid.Column="2" HorizontalAlignment="Left" Height="30" Margin="294,207,0,0" VerticalAlignment="Top" Width="82" RenderTransformOrigin="0.445,0.567"/>
+                    <Button x:Name="bt1_Copy3" Content="ВИП" HorizontalAlignment="Left" Height="40" Margin="544,211,0,0" VerticalAlignment="Top" Width="98" Grid.Column="2" Click="bt1_Copy3_Click"/>
+                    <Label x:Name="Lb1_bt1_Copy3" Content="" Grid.Column="2" HorizontalAlignment="Left" Height="30" Margin="574,207,0,0" VerticalAlignment="Top" Width="82" RenderTransformOrigin="0.445,0.567"/>
+                    <Button x:Name="bt1_Copy4" Content="&#xA;Бюджетное место" HorizontalAlignment="Left" Height="40" Margin="544,144,0,0" VerticalAlignment="Top" Width="112" Grid.Column="2" Click="bt1_Copy4_Click"/>
+                    <Label x:Name="Lb1_bt1_Copy4" Content="" Grid.Column="2" HorizontalAlignment="Left" Height="30" Margin="574,140,0,0" VerticalAlignment="Top" Width="98
+                           " RenderTransformOrigin="0.445,0.567"/>
+                    <Button Content="&#xA;Поддорожник" Grid.Column="2" HorizontalAlignment="Left" Height="40" Margin="26,144,0,0" VerticalAlignment="Top" Width="98" Click="Button_Click_3"/>
+                    <Label x:Name="Lb1_bt1_Copy" Content="" Grid.Column="2" HorizontalAlignment="Left" Height="30" Margin="56,140,0,0" VerticalAlignment="Top" Width="82" RenderTransformOrigin="0.445,0.567"/>
+                </Grid>
+            </TabItem>
+
+
+        </TabControl>
+
+    </Grid>
+</Window>
